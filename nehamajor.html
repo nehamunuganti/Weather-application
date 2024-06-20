@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nehamajor.css">
+    
+    <title>Weather Forecast</title>
+</head>
+<body onload="DefaultScreen()">
+    <center>
+        <h1 id="Para1">7 Days Weather Forecast</h1>
+        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+        <button type="button" onclick="GetInfo()">Click Me</button>        
+        <div class="weather">
+            <h2 id="dt"></h2>
+            <h2 class="city" id="cityName"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/128/481/481453.png" width="100px" height="100px">
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4158/4158502.png" width="100px" height="100px">
+                    <div>
+                        <p class="temperature"></p>
+                        <p>Temperature</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/128/6015/6015171.png" width="100px" height="100px">
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/128/648/648198.png" width="90px" height="90px" id="condition">
+                    <div>
+                        <p class="condition"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+    <div class="dayscontainer">
+        <div class="daysbox">
+           <p class="weather" id="day1"></p>
+           <p class="date" id="date1"></p>
+           <div class="image"><img src="https://cdn-icons-png.flaticon.com/128/39/39979.png" width="130px" height="130px" id="img1"></div>
+           <p class="type" id="day1type"></p>
+           <p class="temp" id="day1temp"></p>
+           <p class="humid" id="day1humid"></p>
+           <p class="windspeed" id="day1speed"></p>
+        </div>
+        <div class="daysbox">
+            <p class="weather" id="day2"></p>
+            <p class="date" id="date2"></p>
+           <div class="image"><img src="https://cdn-icons-png.flaticon.com/128/39/39979.png" width="130px" height="130px" id="img2"></div>
+           <p class="type" id="day2type"></p>
+           <p class="temp" id="day2temp"></p>
+           <p class="humid" id="day2humid"></p>
+           <p class="windspeed" id="day2speed"></p>
+        </div>
+        <div class="daysbox">
+            <p class="weather" id="day3"></p>
+            <p class="date" id="date3"></p>
+           <div class="image"><img src="https://cdn-icons-png.flaticon.com/128/39/39979.png" width="130px" height="130px" id="img3"></div>
+           <p class="type" id="day3type"></p>
+           <p class="temp" id="day3temp"></p>
+           <p class="humid" id="day3humid"></p>
+           <p class="windspeed" id="day3speed"></p>
+        </div>
+        <div class="daysbox">
+            <p class="weather" id="day4"></p>
+            <p class="date" id="date4"></p>
+           <div class="image"><img src="https://cdn-icons-png.flaticon.com/128/39/39979.png" width="100px" height="100px" id="img4"></div>
+           <p class="type" id="day4type"></p>
+           <p class="temp" id="day4temp"></p>
+           <p class="humid" id="day4humid"></p>
+           <p class="windspeed" id="day4speed"></p>
+        </div>
+        <div class="daysbox">
+            <p class="weather" id="day5"></p>
+            <p class="date" id="date5"></p>
+           <div class="image"><img src="https://cdn-icons-png.flaticon.com/128/39/39979.png" width="100px" height="100px" id="img5"></div>
+           <p class="type" id="day5type"></p>
+           <p class="temp" id="day5temp"></p>
+           <p class="humid" id="day5humid"></p>
+           <p class="windspeed" id="day5speed"></p>
+        </div>
+        <div class="daysbox">
+            <p class="weather" id="day6"></p>
+            <p class="date" id="date6"></p>
+           <div class="image"><img src="https://cdn-icons-png.flaticon.com/128/39/39979.png" width="100px" height="100px" id="img6"></div>
+           <p class="type" id="day6type"></p>
+           <p class="temp" id="day6temp"></p>
+           <p class="humid" id="day6humid"></p>
+           <p class="windspeed" id="day6speed"></p>
+        </div>
+        <div class="daysbox">
+            <p class="weather" id="day7"></p>
+            <p class="date" id="date7"></p>
+           <div class="image"><img src="https://cdn-icons-png.flaticon.com/128/39/39979.png" width="100px" height="100px" id="img7"></div>
+           <p class="type" id="day7type"></p>
+           <p class="temp" id="day7temp"></p>
+           <p class="humid" id="day7humid"></p>
+           <p class="windspeed" id="day7speed"></p>
+        </div>
+    </div>
+    <script src="nehamajor.js"></script>
+</body>
+</html>
